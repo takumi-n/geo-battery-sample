@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var updateCountLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
-    @IBOutlet weak var longtitudeLabel: UILabel!
+    @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var batteryStatusLabel: UILabel!
 
     override func viewDidLoad() {
@@ -26,8 +26,8 @@ class ViewController: UIViewController {
         let lastLatitude = UserDefaults.standard.string(forKey: "latitude") ?? "None"
         latitudeLabel.text = "\(lastLatitude)"
 
-        let lastLongtitude = UserDefaults.standard.string(forKey: "longtitude") ?? "None"
-        longtitudeLabel.text = "\(lastLongtitude)"
+        let lastLongitude = UserDefaults.standard.string(forKey: "longitude") ?? "None"
+        longitudeLabel.text = "\(lastLongitude)"
 
         let batteryStatus = UserDefaults.standard.float(forKey: "battery")
         batteryStatusLabel.text = "\(batteryStatus * 100)%"
@@ -41,8 +41,8 @@ class ViewController: UIViewController {
         let lastLatitude = UserDefaults.standard.string(forKey: "latitude") ?? "None"
         latitudeLabel.text = "\(lastLatitude)"
 
-        let lastLongtitude = UserDefaults.standard.string(forKey: "longtitude") ?? "None"
-        longtitudeLabel.text = "\(lastLongtitude)"
+        let lastLongitude = UserDefaults.standard.string(forKey: "longitude") ?? "None"
+        longitudeLabel.text = "\(lastLongitude)"
 
         let batteryStatus = UserDefaults.standard.float(forKey: "battery")
         batteryStatusLabel.text = "\(batteryStatus * 100)%"

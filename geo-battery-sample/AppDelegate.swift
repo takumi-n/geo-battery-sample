@@ -79,7 +79,7 @@ extension AppDelegate: CLLocationManagerDelegate {
             UserDefaults.standard.set(updateCount + 1, forKey: "update_count")
 
             UserDefaults.standard.set("\(location.coordinate.latitude)", forKey: "latitude")
-            UserDefaults.standard.set("\(location.coordinate.longitude)", forKey: "longtitude")
+            UserDefaults.standard.set("\(location.coordinate.longitude)", forKey: "longitude")
 
             // 位置情報取得のタイミングでバッテリー残量も取得
 
